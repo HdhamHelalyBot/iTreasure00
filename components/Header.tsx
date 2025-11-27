@@ -17,6 +17,7 @@ const Header: React.FC = () => {
       <a href="#about" className="hover:text-brand-red transition-colors">{t('ourBusiness')}</a>
       <a href="#about" className="hover:text-brand-red transition-colors">{t('aboutUs')}</a>
       <a href="#blog" className="hover:text-brand-red transition-colors">{t('articles')}</a>
+      <a href="#gallery" className="hover:text-brand-red transition-colors">{t('gallery')}</a>
     </>
   );
 

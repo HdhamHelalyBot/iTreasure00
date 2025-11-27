@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import ProductCategoryGrid from './components/ProductCategoryGrid';
 import AboutSection from './components/AboutSection';
 import Articles from './components/Articles';
+import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <ProductCategoryGrid />
           <AboutSection />
           <Articles />
+          <Gallery />
         </main>
         <Footer />
       </div>
