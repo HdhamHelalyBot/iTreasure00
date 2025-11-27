@@ -1,14 +1,13 @@
-
 import React from 'react';
 import { useTranslation } from '../lib/translations';
 
 const galleryImages = [
   'https://images.unsplash.com/photo-1593349323313-1a0e8a7f2a15?q=80&w=800&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1614247262118-2c35196b01ef?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1563729828284-073a6a96e2b6?q=80&w=800&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1579566346927-c68383817a25?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1611348528833-529452d1b4a0?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1605719262143-a61b5c4f25a3?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1507563813878-05996025621b?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1580920469262-b99b244e138a?q=80&w=800&auto=format&fit=crop',
 ];
 
 const Gallery: React.FC = () => {
