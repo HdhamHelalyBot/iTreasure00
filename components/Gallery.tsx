@@ -2,12 +2,12 @@ import React from 'react';
 import { useTranslation } from '../lib/translations';
 
 const galleryImages = [
-  'https://images.unsplash.com/photo-1593349323313-1a0e8a7f2a15?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1614247262118-2c35196b01ef?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1563729828284-073a6a96e2b6?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1579566346927-c68383817a25?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1507563813878-05996025621b?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1580920469262-b99b244e138a?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1526406915894-7bcd65f60845?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1617886322207-61780856b37a?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1555774698-0b77e0abfe79?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1614992683905-2785464526b7?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1587573089734-09cb69c0f2b9?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1611606003196-93a89b4f4a3f?q=80&w=800&auto=format&fit=crop',
 ];
 
 const Gallery: React.FC = () => {

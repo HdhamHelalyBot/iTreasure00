@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative bg-gray-200 dark:bg-gray-900/50 py-20 sm:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-20" style={{backgroundImage: "url('https://images.unsplash.com/photo-1578357078586-491adf12acc7?q=80&w=1920&auto=format&fit=crop')"}}></div>
+        <div className="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-20" style={{backgroundImage: "url('https://images.unsplash.com/photo-1592424002053-21f369ad7fdb?q=80&w=1920&auto=format&fit=crop')"}}></div>
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light via-transparent dark:from-brand-dark dark:via-transparent"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">

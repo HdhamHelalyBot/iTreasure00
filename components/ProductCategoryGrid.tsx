@@ -22,6 +22,9 @@ const ProductCategoryGrid: React.FC = () => {
                   src={category.image} 
                   alt={category.name[language]} 
                   className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300" 
+                  loading="lazy"
+                  width="400"
+                  height="400"
                 />
               </div>
               <div className="p-4 text-center">

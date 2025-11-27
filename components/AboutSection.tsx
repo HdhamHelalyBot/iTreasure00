@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="rtl:md:order-2">
             <img 
-              src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=600&auto=format&fit=crop" 
+              src="https://images.unsplash.com/photo-1614713388732-b7582500c922?q=80&w=600&auto=format&fit=crop" 
               alt="iTreasure Team" 
               className="rounded-lg shadow-lg w-full h-auto object-cover"
             />
@@ -35,7 +35,7 @@ const AboutSection: React.FC = () => {
           </div>
           <div>
              <img 
-              src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=600&auto=format&fit=crop" 
+              src="https://images.unsplash.com/photo-1563729828284-073a6a96e2b6?q=80&w=600&auto=format&fit=crop" 
               alt="iTreasure Warehouse" 
               className="rounded-lg shadow-lg w-full h-auto object-cover"
             />
