@@ -4,9 +4,9 @@ import { AppContextProvider, Language, Theme } from './context/AppContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ProductCategoryGrid from './components/ProductCategoryGrid';
+import FeaturedProducts from './components/FeaturedProducts';
 import AboutSection from './components/AboutSection';
 import Articles from './components/Articles';
-import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 function App() {
@@ -36,9 +36,9 @@ function App() {
         <main>
           <Hero />
           <ProductCategoryGrid />
+          <FeaturedProducts />
           <AboutSection />
           <Articles />
-          <Gallery />
         </main>
         <Footer />
       </div>

@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             <div className="md:col-span-2 flex justify-center md:justify-end">
               <div className="flex space-x-6 rtl:space-x-reverse items-center">
                 <a href="#about" className="hover:text-brand-red transition-colors">{t('aboutUs')}</a>
-                <a href="#gallery" className="hover:text-brand-red transition-colors">{t('gallery')}</a>
+                <a href="#products" className="hover:text-brand-red transition-colors">{t('featuredProducts')}</a>
                 <button onClick={() => setActiveModal('terms')} className="hover:text-brand-red transition-colors">{t('termsAndConditions')}</button>
                 <button onClick={() => setActiveModal('privacy')} className="hover:text-brand-red transition-colors">{t('privacyPolicy')}</button>
               </div>

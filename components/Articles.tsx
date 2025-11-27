@@ -27,17 +27,17 @@ const Articles: React.FC = () => {
           <ArticleCard 
             titleKey="article1Title" 
             contentKey="article1Content" 
-            image="https://images.unsplash.com/photo-1555774698-0b77e0e5a524?q=80&w=500&auto=format&fit=crop"
+            image="https://images.unsplash.com/photo-1565292279169-d670690a42f3?q=80&w=500&auto=format&fit=crop"
           />
           <ArticleCard 
             titleKey="article2Title" 
             contentKey="article2Content" 
-            image="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=500&auto=format&fit=crop"
+            image="https://images.unsplash.com/photo-1627854619438-06756960c201?q=80&w=500&auto=format&fit=crop"
           />
           <ArticleCard 
             titleKey="article3Title" 
             contentKey="article3Content" 
-            image="https://images.unsplash.com/photo-1579566346927-c68383817a25?q=80&w=500&auto=format&fit=crop"
+            image="https://images.unsplash.com/photo-1593349480503-6f170944b02a?q=80&w=500&auto=format&fit=crop"
           />
         </div>
       </div>
