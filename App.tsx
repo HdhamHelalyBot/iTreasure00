@@ -4,10 +4,13 @@ import { AppContextProvider, Language, Theme } from './context/AppContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ProductCategoryGrid from './components/ProductCategoryGrid';
-import FeaturedProducts from './components/FeaturedProducts';
 import AboutSection from './components/AboutSection';
 import Articles from './components/Articles';
 import Footer from './components/Footer';
+// FIX: Import FeaturedProducts and Gallery components
+import FeaturedProducts from './components/FeaturedProducts';
+import Gallery from './components/Gallery';
+
 
 function App() {
   const [theme, setTheme] = useState<Theme>('dark');
@@ -36,7 +39,9 @@ function App() {
         <main>
           <Hero />
           <ProductCategoryGrid />
+          {/* FIX: Render the FeaturedProducts and Gallery components */}
           <FeaturedProducts />
+          <Gallery />
           <AboutSection />
           <Articles />
         </main>

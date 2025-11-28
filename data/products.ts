@@ -1,66 +1,122 @@
+
+import React from 'react';
+import { 
+  ConnectorsIcon, SemiconductorsIcon, ComponentsIcon, ElectronicsIcon, 
+  ElectromechanicalIcon, AutomationIcon, ComputerToolsIcon, SoftwareIcon, 
+  PowerIcon, OptoIcon, EngineeringIcon 
+} from '../components/icons/CategoryIcons';
+
 export interface Category {
   id: string;
   name: {
     en: string;
     ar: string;
   };
-  image: string;
+  icon: React.FC<React.SVGProps<SVGSVGElement>>;
+  description: {
+    en: string;
+    ar: string;
+  };
 }
 
 export const categories: Category[] = [
   {
     id: 'connectors',
     name: { en: 'Connectors & Cables', ar: 'الموصلات والكابلات' },
-    image: 'https://images.unsplash.com/photo-1543974352-9c4c7310a4fa?q=80&w=400&auto=format&fit=crop',
+    icon: ConnectorsIcon,
+    description: {
+      en: 'High-quality connectors and durable cables for reliable signal and power transmission.',
+      ar: 'موصلات عالية الجودة وكابلات متينة لنقل الإشارة والطاقة بشكل موثوق.',
+    },
   },
   {
     id: 'semiconductors',
     name: { en: 'Semiconductors', ar: 'أشباه الموصلات' },
-    image: 'https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=400&auto=format&fit=crop',
+    icon: SemiconductorsIcon,
+    description: {
+      en: 'Advanced semiconductor devices such as ICs, microchips, and transistors.',
+      ar: 'أجهزة أشباه الموصلات المتقدمة مثل الدوائر المتكاملة والرقائق الدقيقة والترانزستورات.',
+    },
   },
   {
     id: 'components',
     name: { en: 'Components', ar: 'مكونات' },
-    image: 'https://images.unsplash.com/photo-1550751827-4133d5e30b6d?q=80&w=400&auto=format&fit=crop',
+    icon: ComponentsIcon,
+    description: {
+      en: 'Essential electronic parts including resistors, capacitors, sensors, and switches.',
+      ar: 'أجزاء إلكترونية أساسية تشمل المقاومات والمكثفات والحساسات والمفاتيح.',
+    },
   },
   {
     id: 'electronics',
     name: { en: 'Electronics', ar: 'الالكترونيات' },
-    image: 'https://images.unsplash.com/photo-1603468620905-8de7d86b781e?q=80&w=400&auto=format&fit=crop',
+    icon: ElectronicsIcon,
+    description: {
+      en: 'Modern electronic products delivering performance, efficiency, and smart functionality.',
+      ar: 'منتجات إلكترونية حديثة تقدم أداءً وكفاءة ووظائف ذكية.',
+    },
   },
   {
     id: 'electromechanical',
     name: { en: 'Electromechanical', ar: 'الكهروميكانيكية' },
-    image: 'https://images.unsplash.com/photo-1589254589531-3858117997b6?q=80&w=400&auto=format&fit=crop',
+    icon: ElectromechanicalIcon,
+    description: {
+      en: 'Precision electromechanical parts including motors, relays, and motion-control devices.',
+      ar: 'أجزاء كهروميكانيكية دقيقة تشمل المحركات والمرحلات وأجهزة التحكم في الحركة.',
+    },
   },
   {
     id: 'automation',
     name: { en: 'Automation & Control', ar: 'الأتمتة والتحكم' },
-    image: 'https://images.unsplash.com/photo-1567443024552-37bb2459e449?q=80&w=400&auto=format&fit=crop',
+    icon: AutomationIcon,
+    description: {
+      en: 'Industrial automation solutions including PLCs, sensors, controllers, and monitoring systems.',
+      ar: 'حلول الأتمتة الصناعية التي تشمل وحدات التحكم المنطقية القابلة للبرمجة والحساسات ووحدات التحكم وأنظمة المراقبة.',
+    },
   },
   {
     id: 'computer-tools',
     name: { en: 'Computer Tools', ar: 'أدوات الكمبيوتر' },
-    image: 'https://images.unsplash.com/photo-1517070208541-6ddc4d3ef95a?q=80&w=400&auto=format&fit=crop',
+    icon: ComputerToolsIcon,
+    description: {
+      en: 'Reliable computer tools and accessories designed for productivity and performance.',
+      ar: 'أدوات وملحقات كمبيوتر موثوقة مصممة للإنتاجية والأداء.',
+    },
   },
   {
     id: 'software',
     name: { en: 'Development & Software', ar: 'التطوير والبرمجيات' },
-    image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=400&auto=format&fit=crop',
+    icon: SoftwareIcon,
+    description: {
+        en: 'Software and tools for developers and engineers.',
+        ar: 'برامج وأدوات للمطورين والمهندسين.',
+    },
   },
   {
     id: 'power',
     name: { en: 'Power & Circuit Protection', ar: 'الطاقة وحماية الدوائر' },
-    image: 'https://images.unsplash.com/photo-1601823135311-37d8b5a37250?q=80&w=400&auto=format&fit=crop',
+    icon: PowerIcon,
+    description: {
+      en: 'Power supplies and safety components ensuring stable and protected electrical operation.',
+      ar: 'وحدات تزويد الطاقة ومكونات السلامة التي تضمن التشغيل الكهربائي المستقر والمحمي.',
+    },
   },
   {
     id: 'optoelectronics',
     name: { en: 'Optoelectronics', ar: 'الإلكترونيات الضوئية' },
-    image: 'https://images.unsplash.com/photo-1527807828732-b969b557d4a2?q=80&w=400&auto=format&fit=crop',
+    icon: OptoIcon,
+    description: {
+        en: 'Components that source, detect, and control light.',
+        ar: 'مكونات تقوم بإصدار وكشف والتحكم في الضوء.',
+    },
   },
   {
     id: 'engineering-software',
     name: { en: 'Engineering Software', ar: 'برمجيات الهندسة' },
-    image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?q=80&w=400&auto=format&fit=crop',
+    icon: EngineeringIcon,
+    description: {
+        en: 'Powerful software for engineering design, simulation, and analysis.',
+        ar: 'برامج قوية للتصميم الهندسي والمحاكاة والتحليل.',
+    },
   }
 ];
