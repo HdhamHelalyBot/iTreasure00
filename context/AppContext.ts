@@ -1,5 +1,6 @@
 
 import { createContext, useContext } from 'react';
+import { TranslationKey } from '../lib/translations';
 
 export type Theme = 'light' | 'dark';
 export type Language = 'en' | 'ar';
@@ -9,6 +10,7 @@ export interface AppContextType {
   setTheme: (theme: Theme) => void;
   language: Language;
   setLanguage: (language: Language) => void;
+  t: (key: TranslationKey) => string;
 }
 
 export const AppContext = createContext<AppContextType | undefined>(undefined);

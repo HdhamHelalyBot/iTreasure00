@@ -1,17 +1,18 @@
+
 import React from 'react';
-import { useTranslation } from '../lib/translations';
+import { useAppContext } from '../context/AppContext';
 
 const galleryImages = [
-  'https://images.unsplash.com/photo-1526406915894-7bcd65f60845?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1617886322207-61780856b37a?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1555774698-0b77e0abfe79?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1614992683905-2785464526b7?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1587573089734-09cb69c0f2b9?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1611606003196-93a89b4f4a3f?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1598920394274-332a63b4d4a8?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1542978728-447551064367?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1593640495253-23192b270ac8?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1604168285918-a28455a297cd?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1578357078586-491adf1214b2?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1581351123004-a52646347a5b?q=80&w=800&auto=format&fit=crop',
 ];
 
 const Gallery: React.FC = () => {
-  const t = useTranslation();
+  const { t } = useAppContext();
 
   return (
     <section id="gallery" className="py-16 sm:py-24 bg-gray-200 dark:bg-gray-900">

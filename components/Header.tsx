@@ -1,12 +1,10 @@
 
 import React, { useState } from 'react';
 import { useAppContext } from '../context/AppContext';
-import { useTranslation } from '../lib/translations';
 import { SunIcon, MoonIcon, LanguageIcon, MenuIcon, XIcon } from './icons/Icons';
 
 const Header: React.FC = () => {
-  const { theme, setTheme, language, setLanguage } = useAppContext();
-  const t = useTranslation();
+  const { theme, setTheme, language, setLanguage, t } = useAppContext();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark');

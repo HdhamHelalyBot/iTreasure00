@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import { useTranslation } from '../lib/translations';
+import { useAppContext } from '../context/AppContext';
 import Modal from './Modal';
 
 const Footer: React.FC = () => {
-  const t = useTranslation();
+  const { t } = useAppContext();
   const currentYear = new Date().getFullYear();
   const [activeModal, setActiveModal] = useState<'terms' | 'privacy' | null>(null);
 

@@ -1,12 +1,10 @@
 
 import React from 'react';
-import { useTranslation } from '../lib/translations';
 import { categories, Category } from '../data/products';
 import { useAppContext } from '../context/AppContext';
 
 const ProductCategoryGrid: React.FC = () => {
-  const t = useTranslation();
-  const { language } = useAppContext();
+  const { t, language } = useAppContext();
 
   return (
     <section id="categories" className="py-16 sm:py-24 bg-brand-light dark:bg-brand-dark">

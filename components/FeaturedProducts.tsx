@@ -1,12 +1,10 @@
 
 import React from 'react';
-import { useTranslation } from '../lib/translations';
 import { featuredProducts, Product } from '../data/featuredProducts';
 import { useAppContext } from '../context/AppContext';
 
 const FeaturedProducts: React.FC = () => {
-  const t = useTranslation();
-  const { language } = useAppContext();
+  const { t, language } = useAppContext();
 
   return (
     <section id="products" className="py-16 sm:py-24 bg-gray-200 dark:bg-gray-900">

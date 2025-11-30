@@ -1,8 +1,10 @@
+
 import React from 'react';
-import { useTranslation, TranslationKey } from '../lib/translations';
+import { TranslationKey } from '../lib/translations';
+import { useAppContext } from '../context/AppContext';
 
 const ArticleCard: React.FC<{ titleKey: TranslationKey; contentKey: TranslationKey; image: string }> = ({ titleKey, contentKey, image }) => {
-  const t = useTranslation();
+  const { t } = useAppContext();
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden group transform transition duration-300 hover:-translate-y-2">
       <img src={image} alt={t(titleKey)} className="w-full h-48 object-cover" />
@@ -15,7 +17,7 @@ const ArticleCard: React.FC<{ titleKey: TranslationKey; contentKey: TranslationK
 };
 
 const Articles: React.FC = () => {
-  const t = useTranslation();
+  const { t } = useAppContext();
 
   return (
     <section id="blog" className="py-16 sm:py-24 bg-brand-light dark:bg-brand-dark">
@@ -27,17 +29,17 @@ const Articles: React.FC = () => {
           <ArticleCard 
             titleKey="article1Title" 
             contentKey="article1Content" 
-            image="https://images.unsplash.com/photo-1589578236669-8866385d8363?q=80&w=500&auto=format&fit=crop"
+            image="https://images.unsplash.com/photo-1526657782461-9fe13402a841?q=80&w=500&auto=format&fit=crop"
           />
           <ArticleCard 
             titleKey="article2Title" 
             contentKey="article2Content" 
-            image="https://images.unsplash.com/photo-1603953078494-733f1345f46a?q=80&w=500&auto=format&fit=crop"
+            image="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?q=80&w=500&auto=format&fit=crop"
           />
           <ArticleCard 
             titleKey="article3Title" 
             contentKey="article3Content" 
-            image="https://images.unsplash.com/photo-1620192133827-3c3f91ef38a2?q=80&w=500&auto=format&fit=crop"
+            image="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=500&auto=format&fit=crop"
           />
         </div>
       </div>

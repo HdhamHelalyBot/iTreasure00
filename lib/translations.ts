@@ -27,14 +27,24 @@ export const translations = {
     'allRightsReserved': 'All Rights Reserved.',
     'termsTitle': 'Terms & Conditions',
     'privacyTitle': 'Privacy Policy',
-    // FIX: Add missing translation keys for featured products
     'featuredProducts': 'Featured Products',
     'viewDetails': 'View Details',
-    // FIX: Add missing translation keys for gallery
     'galleryTitle': 'Our Products in Action',
     'gallerySubtitle': 'A visual journey through the components and creations powered by iTreasure.',
     'termsContent': `Welcome to iTreasure. These terms and conditions outline the rules and regulations for the use of iTreasure's Website. By accessing this website we assume you accept these terms and conditions. Do not continue to use iTreasure if you do not agree to take all of the terms and conditions stated on this page.\n\nThe following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company's terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.`,
     'privacyContent': `Your privacy is important to us. It is iTreasure's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.\n\nWe only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.\n\nWe only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.\n\nWe don’t share any personally identifying information publicly or with third-parties, except when required to by law.\n\nOur website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies. You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.`,
+    // FIX: Add missing translation keys for ImageEnhancer component
+    'errorEnhancing': 'An error occurred while enhancing the image. Please try again.',
+    'imageEnhancerTitle': 'AI-Powered Image Enhancer',
+    'imageEnhancerSubtitle': 'Upload a product photo and let our AI improve its quality for your e-commerce store.',
+    'original': 'Original',
+    'enhanced': 'Enhanced',
+    'uploadArea': 'Click to upload or drag and drop',
+    'supportedFormats': 'PNG, JPG, WEBP up to 10MB',
+    'enhancing': 'Enhancing your image...',
+    'enhancedPlaceholder': 'Your enhanced image will appear here.',
+    'enhanceButton': 'Enhance Image',
+    'downloadImage': 'Download',
   },
   ar: {
     'iTreasure': 'iTreasure',
@@ -63,24 +73,29 @@ export const translations = {
     'allRightsReserved': 'جميع الحقوق محفوظة.',
     'termsTitle': 'الشروط والأحكام',
     'privacyTitle': 'سياسة الخصوصية',
-    // FIX: Add missing translation keys for featured products
     'featuredProducts': 'المنتجات المميزة',
     'viewDetails': 'عرض التفاصيل',
-    // FIX: Add missing translation keys for gallery
     'galleryTitle': 'منتجاتنا في صور',
     'gallerySubtitle': 'رحلة بصرية عبر المكونات والإبداعات التي تدعمها iTreasure.',
     'termsContent': `مرحبًا بك في iTreasure. تحدد هذه الشروط والأحكام القواعد واللوائح الخاصة باستخدام موقع iTreasure. من خلال الوصول إلى هذا الموقع، نفترض أنك تقبل هذه الشروط والأحكام. لا تواصل استخدام iTreasure إذا كنت لا توافق على قبول جميع الشروط والأحكام المذكورة في هذه الصفحة.\n\nتنطبق المصطلحات التالية على هذه الشروط والأحكام وبيان الخصوصية وإشعار إخلاء المسؤولية وجميع الاتفاقيات: يشير "العميل" و "أنت" و "الخاص بك" إليك، الشخص الذي يقوم بتسجيل الدخول إلى هذا الموقع ويلتزم بشروط وأحكام الشركة. تشير "الشركة" و "أنفسنا" و "نحن" و "الخاص بنا" إلينا. يشير "الطرف" أو "الأطراف" أو "نحن" إلى كل من العميل وأنفسنا. تشير جميع الشروط إلى العرض والقبول والنظر في الدفع اللازم للقيام بعملية مساعدتنا للعميل بالطريقة الأنسب للغرض الصريح المتمثل في تلبية احتياجات العميل فيما يتعلق بتقديم خدمات الشركة المعلنة، وفقًا للقانون السائد في هولندا. أي استخدام للمصطلحات المذكورة أعلاه أو كلمات أخرى بصيغة المفرد أو الجمع أو الكتابة بالأحرف الكبيرة و / أو هو / هي أو هم، يُعتبر قابلاً للتبادل وبالتالي يشير إلى نفس الشيء.`,
     'privacyContent': `خصوصيتك تهمنا. من سياسة iTreasure احترام خصوصيتك فيما يتعلق بأي معلومات قد نجمعها منك عبر موقعنا الإلكتروني والمواقع الأخرى التي نمتلكها ونديرها.\n\nنحن نطلب فقط المعلومات الشخصية عندما نحتاجها حقًا لتقديم خدمة لك. نجمعها بوسائل عادلة وقانونية، بمعرفتك وموافقتك. نعلمك أيضًا بسبب جمعها وكيف سيتم استخدامها.\n\nنحتفظ بالمعلومات التي تم جمعها فقط طالما كان ذلك ضروريًا لتزويدك بالخدمة المطلوبة. البيانات التي نخزنها، سنحميها ضمن وسائل مقبولة تجاريًا لمنع الفقد والسرقة، وكذلك الوصول غير المصرح به أو الكشف أو النسخ أو الاستخدام أو التعديل.\n\nلا نشارك أي معلومات تعريف شخصية علنًا أو مع أطراف ثالثة، إلا عندما يقتضي القانون ذلك.\n\nقد يرتبط موقعنا بمواقع خارجية لا نديرها. يرجى العلم بأنه ليس لدينا أي سيطرة على محتوى وممارسات هذه المواقع، ولا يمكننا قبول المسؤولية عن سياسات الخصوصية الخاصة بكل منها. لك الحرية في رفض طلبنا للحصول على معلوماتك الشخصية، مع العلم أننا قد لا نتمكن من تزويدك ببعض الخدمات التي ترغب فيها.`,
+    // FIX: Add missing translation keys for ImageEnhancer component
+    'errorEnhancing': 'حدث خطأ أثناء تحسين الصورة. يرجى المحاولة مرة أخرى.',
+    'imageEnhancerTitle': 'محسن الصور المدعوم بالذكاء الاصطناعي',
+    'imageEnhancerSubtitle': 'قم بتحميل صورة منتج ودع الذكاء الاصطناعي لدينا يحسن جودتها لمتجرك الإلكتروني.',
+    'original': 'الأصلية',
+    'enhanced': 'المحسّنة',
+    'uploadArea': 'انقر للتحميل أو اسحب وأفلت',
+    'supportedFormats': 'PNG, JPG, WEBP بحجم يصل إلى 10 ميجابايت',
+    'enhancing': 'جاري تحسين صورتك...',
+    'enhancedPlaceholder': 'ستظهر صورتك المحسنة هنا.',
+    'enhanceButton': 'تحسين الصورة',
+    'downloadImage': 'تحميل',
   },
 };
 
 export type TranslationKey = keyof typeof translations.en;
 
-export const useTranslation = () => {
-  const { language } = useAppContext();
-  return (key: TranslationKey): string => {
-    return translations[language][key] || key;
-  };
+export const getT = (language: 'en' | 'ar') => (key: TranslationKey): string => {
+  return translations[language][key] || key;
 };
-
-import { useAppContext } from '../context/AppContext';
